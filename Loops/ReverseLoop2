@@ -1,0 +1,19 @@
+//Write a program to print negative integers to positive integers (-10 to 10) using a reverse loop
+
+
+
+public class ReverseLoop2 {
+    
+    public static void main(String []args){
+
+
+        for (int i = -10; i<11; i++)
+        
+        {
+
+
+            System.out.println(i);
+
+        }
+    }
+}
