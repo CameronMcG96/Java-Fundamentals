@@ -1,1 +1,47 @@
+// Write a program asking for a boolean input, float input and double input
+
+Import java.util.Scanner;
+
+public class Input Example {
+
+  public static void main(String[] args) {
+
+      Scanner scanner = new Scanner(System.in);
+
+      //Boolean Input
+      System.out.println("Enter a boolean (true or false): ");
+      boolean booleanInput = scanner.nextBoolean();
+
+
+      //Clear the newline character from the previuous input
+      scanner.nextLine():
+
+
+      //Float Input
+      System.out.println("Enter a float number: "); 
+
+
+      scanner.nextLine();
+
+
+      //Double Input
+      System.out.println("Enter a double number: "); 
+      double doubleInput = scanner.nextDouble();
+
+
+      scanner.nextLine();
+
+
+      //Output the entered values
+      System.out.println("Boolean Input: " + booleanInput);
+      System.out.println("Float Input: " + floatInput);
+      System.out.println("Double Input: " + doubleInput);
+
+      scanner.close();
+
+}
+
+
+}
+
 
