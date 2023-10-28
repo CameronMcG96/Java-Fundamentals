@@ -14,12 +14,12 @@ public class Input Example {
 
 
       //Clear the newline character from the previuous input
-      scanner.nextLine():
+      scanner.nextLine();
 
 
       //Float Input
       System.out.println("Enter a float number: "); 
-
+      float floatInput = scanner.nextFloat(); 
 
       scanner.nextLine();
 
