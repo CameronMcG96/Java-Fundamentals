@@ -1,0 +1,18 @@
+//Write a program to find if a number is in the range of lowerBound and upperBound values.
+
+public class RangeCheck {
+    public static void main(String[] args) {
+        int number = 30;
+        int lowerBound = 10;
+        int upperBound = 50;
+
+        // Check if the number is within the range [lowerBound, upperBound]
+        boolean isWithinRange = (number >= lowerBound) && (number <= upperBound);
+
+        if (isWithinRange) {
+            System.out.println(number + " is within the range [" + lowerBound + ", " + upperBound + "].");
+        } else {
+            System.out.println(number + " is outside the range [" + lowerBound + ", " + upperBound + "].");
+        }
+    }
+}
