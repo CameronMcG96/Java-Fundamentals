@@ -1,1 +1,41 @@
+//Write a program using the different arithmetic operators(+, -, /, *, %) 
+
+public class ArithmeticOperations {
+
+  public static void main(String[] args) {
+
+    double num1 = 66
+    double num2 = 10
+
+    
+
+
+
+    //Adds two values together
+    double add = num1 + num2;
+
+    //Subtracts one value from another
+    double subtract = num1 - num2;
+
+    //Multiplies two values
+    double times = num1 * num2;
+
+    //Divides one value by another
+    double div = num1 / num2;
+
+    //Modulus returns the division remainder
+    
+
+
+    System.out.println("Addition operator answer: " + add);
+    System.out.println("Subtraction operator answer: " + subtract);
+    System.out.println("Multiplication operator answer: " + times);
+    System.out.println("Division operator answer: " + div);
+  
+  }
+
+
+
+
+}
 
