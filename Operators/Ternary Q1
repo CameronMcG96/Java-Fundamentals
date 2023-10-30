@@ -1,1 +1,34 @@
+//Write a program using the teranry operator to find even or odd number and to find if someones age is meets the requirements to enter
 
+public class TernaryOperator {
+    
+public static void main(String[] args)
+{
+
+int number=13;    
+
+//Using ternary operator  
+
+String output=(number%2==0)?"even number":"odd number";    
+
+System.out.println(output);  
+
+
+int age = 16;
+
+String output2=(age > 18)?"Entry allowed":"Not allowed";
+// First () operator belongs to the condition
+// Second ? operator acts as a boundary between condition and output
+// Thrid : operator seperates output of if and output of else
+// Syntax
+// (condition)? if_output:else_output
+
+
+
+System.out.println(output2);
+
+
+
+
+}
+}
