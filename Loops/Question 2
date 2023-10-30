@@ -1,0 +1,16 @@
+//Write a program using a For loop that calculates the sum of numbers from 1 to specified value 'N'
+
+
+public class forLoop1 {
+    
+        public static void main(String[] args) {
+            int N = 7; // Change N to the desired value
+            int sum = 0;
+    
+            for (int i = 1; i <= N; i++) {
+                sum += i;
+            }
+    
+            System.out.println("The sum of numbers from 1 to " + N + " is " + sum);
+        }
+    }
