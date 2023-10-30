@@ -1,1 +1,24 @@
+//Write a program using logical Not '!' operator
 
+public class findvalues {
+    public static void main(String[] args) {
+        int x = 2;
+        int y = 5;
+        int z = 0;
+
+        // Check if x is not equal to 2
+        System.out.println(!(x == 2));  // Output: false (x is indeed equal to 2)
+
+        // Check if x is not equal to 5
+        System.out.println(!(x != 5));  // Output: true (x is not equal to 5)
+
+        // Check if x is not equal to 5 and y is greater than or equal to 5
+        System.out.println(!(x != 5 && y >= 5));  // Output: false (x is not equal to 5, but y is not greater than or equal to 5)
+
+        // Check if z is not equal to 0 or x is equal to 2
+        System.out.println(z != 0 || x == 2);  // Output: true (x is indeed equal to 2)
+
+        // Check if y is not less than 10
+        System.out.println(!(y < 10));  // Output: true (y is not less than 10)
+    }
+}
