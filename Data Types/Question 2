@@ -1,1 +1,23 @@
+//Write a program using narrow casting to convert data types ?
 
+public class typeCasting {
+    
+    public static void main(String[] args){
+    
+    float floatValue = 12.34F; // Replace with your float value
+    int intValue = (int) floatValue; // Type casting from float to int
+    System.out.println(intValue); // Prints the integer value 
+
+    int int1Value = 42; // Replace with your integer value
+    double doubleValue = (double) int1Value; // Type casting from int to double
+    System.out.println(doubleValue); // Prints the double value
+    
+
+    short shortValue = 100; // Replace with your short value
+    byte byteValue = (byte) shortValue; // Type casting from short to byte
+    System.out.println(byteValue); // Prints the byte value
+
+
+    }
+
+}
