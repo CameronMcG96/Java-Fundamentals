@@ -1,0 +1,35 @@
+//Can you create a Java program that takes two numbers as input from the user and calculates both their multiplication and division results? 
+
+package ConstructorsMethods;
+
+import java.util.Scanner;
+
+public class Method2 {
+    
+    int nextMethod(int a, int b)
+    {
+
+        return a*b;
+    }
+
+    double divMethod(int a, int b)
+    {
+        return a/b;
+    }
+
+
+
+
+// Obj creation should always go top.
+public static void main(String[]arg)
+{
+    Method2 obj = new Method2();
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter number one ?");
+    int num1 = sc.nextInt();
+    System.out.println("Enter number two ?");
+    int num2 = sc.nextInt();
+    System.out.println("Your answer is: " + obj.nextMethod(num1, num2));
+    System.out.println("Your answer is: " + obj.divMethod(num1, num2));
+}    
+}
