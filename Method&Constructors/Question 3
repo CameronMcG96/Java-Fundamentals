@@ -1,0 +1,20 @@
+//Can you demonstrate encapsulation in Java by creating two classes, Method1 and Marksgrader? 
+
+
+package ConstructorsMethods;
+
+public class Method1 {
+
+void camMethod()
+{
+    System.out.println("I am a method");
+}
+public static void main(String[] arg)
+{
+    Method1 obj = new Method1();
+    obj.camMethod();
+    Marksgrader obj1 = new Marksgrader();
+    // Encapsualting one class method (grader) into another class (method1)
+    obj1.grader(98.7f);
+}    
+}
