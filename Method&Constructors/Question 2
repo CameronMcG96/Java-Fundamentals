@@ -1,0 +1,42 @@
+//Write a Java program that takes a student's marks as input and grades them according to the following criteria:
+
+//A+ for marks greater than 90 and less than or equal to 100
+//B+ for marks greater than 80 and less than or equal to 90
+//C+ for marks greater than or equal to 70 and less than or equal to 80
+//Fail for marks less than 70
+//Invalid Entry for any other input
+
+
+
+package ConstructorsMethods;
+import java.util.Scanner;
+
+public class Marksgrader {
+
+    // Create a method for grading marks
+    void grader(float marks) {
+        if (marks > 90 && marks <= 100) {
+            System.out.println("A+");
+        } else if (marks > 80 && marks <= 90) {
+            System.out.println("B+");
+        } else if (marks >= 70 && marks <= 80) {
+            System.out.println("C+");
+        } else if (marks < 70) {
+            System.out.println("Fail");
+        } else {
+            System.out.println("Invalid Entry");
+        }
+    }
+
+    public static void main(String[] args) {
+        Marksgrader obj = new Marksgrader();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your marks: ");
+        float marks = sc.nextFloat();
+
+        obj.grader(marks);
+
+        sc.close();
+    }
+}
