@@ -1,1 +1,34 @@
+// Write a program that defines a class with fields for a person's name, bank amount, and account number, and then initializes and displays these values for a specific individual?
 
+
+
+package ConstructorsMethods;
+
+public class Codecon{
+
+    String name;
+    double amount;
+    int accNum;
+
+
+    // Constructor that initializes the 'name', 'amount', and 'accNum' fields.
+    Codecon( String n, double a, int an)
+    {
+        name = n;
+        amount = a;
+        accNum = an;
+    }
+    
+public static void main(String[] args)
+{
+    // Create an instance of the 'Codecon' class and initialize its fields.
+    Codecon obj = new Codecon("Jimmy Fiddle", 10.50, 389247);
+
+
+    // Print out the values of the object's fields.
+    System.out.println("My name is " + obj.name);
+    System.out.println("My bank amount is " + obj.amount);
+    System.out.println("My account number is " + obj.accNum);
+}
+
+}
