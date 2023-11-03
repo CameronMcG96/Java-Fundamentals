@@ -1,0 +1,33 @@
+//Write a Java program that calculates the bonus amount for an employee based on their salary and years of service. 
+//If the employee has more than 5 years of service, they receive a 5% bonus on their salary
+
+
+
+import java.util.Scanner;
+
+public class CompanyBonus {
+
+    public static void main(String[] args){
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter salary");
+        int x = s.nextInt();
+        System.out.println("Enter years of service");
+        int y = s.nextInt();
+        if((y>5)){
+            System.out.println("You get a bonus of "+(1.05*x)+
+            " your overall net bonus is");
+        }
+        else{
+            System.out.println("You don't receive any bonus");
+        }
+
+
+
+
+
+
+
+    }
+    
+}
