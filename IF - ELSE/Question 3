@@ -1,0 +1,24 @@
+//Write a program that gives users a 10% dicount if they purchase more than $1000 worht of items
+//Give no discount if its under $1000 
+
+import java.util.Scanner;
+
+public class ShopDiscount {
+
+    public static void main(String[] args){
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter quantity");
+        int x = s.nextInt();
+        if((x*100)>1000){
+            double discount = 0.1 * x * 100;
+            
+            System.out.println("You get a discount of "+discount+" and your total cost is "
+            +(x*100- discount));
+        }
+        else{
+            System.out.println("No discount");
+        }
+    }
+    
+}
