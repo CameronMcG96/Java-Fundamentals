@@ -1,0 +1,14 @@
+// Write a program that casts an short value to an byte value ?
+
+public class typeCasting {
+    
+    public static void main(String[] args){
+
+    short shortValue = 100; // Replace with your short value
+    byte byteValue = (byte) shortValue; // Type casting from short to byte
+    System.out.println(byteValue); // Prints the byte value
+
+
+    }
+
+}
