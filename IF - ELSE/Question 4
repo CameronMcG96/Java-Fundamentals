@@ -1,0 +1,21 @@
+//Write a program that takes uses inputs to find out if the shape is a square or a rectangle?
+
+import java.util.Scanner;
+
+public class SquareCheck {
+
+    public static void main(String [] args){
+
+        Scanner s = new Scanner(System.in);
+        System.out.println("Enter length");
+        int x = s.nextInt();
+        System.out.println("Enter breadth");
+        int y = s.nextInt();
+        if (x==y){
+            System.out.println("Square");
+        }
+        else{
+            System.out.println("Rectangle");
+        }
+    }
+}
