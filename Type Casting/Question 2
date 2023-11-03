@@ -1,0 +1,11 @@
+// Write a program that casts an int vlaue to an double value?
+
+public class typeCasting {
+    
+    public static void main(String[] args){
+
+    int int1Value = 42; // Replace with your integer value
+    double doubleValue = (double) int1Value; // Type casting from int to double
+    System.out.println(doubleValue); // Prints the double value
+    }
+}
