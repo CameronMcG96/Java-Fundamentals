@@ -1,0 +1,27 @@
+//Write a program that calculates the perimeter of a triangle
+
+public class PerimeterofShape {
+    
+void Perimeter(double point1, double point2, double point3)
+{
+    
+    System.out.println("This the Perimeter of the triagnle: "+(point1 + point2 + point3)+" units"); 
+
+}
+
+
+    public static void main(String[] args)
+    {
+        PerimeterofShape obj = new PerimeterofShape();
+        System.out.println();
+        obj.Perimeter(3, 4, 5);
+
+
+
+    }
+
+
+
+
+
+}
