@@ -1,0 +1,33 @@
+public class Hello {
+
+    public static void main(String[] arg)
+{
+    // type variablename = value;
+
+    String car = "Ford Mustang"; //12*4 bytes
+
+    Boolean entry_allowed = true; // false, 8 bytes
+
+    int number = 100; //10 2 bytes
+    int number_1 = 2147483647; //10 2 bytes
+
+    double value_1 = 8.889; //int and float 8 bytes
+
+    float decimal = 10f;  //10.00  4 bytes
+
+    char alphabet = 'Z';  // 2 bytes
+
+    short value_2 =  5000; // Store whole numbers from -32768 to 32767
+
+    long value_3 =  9223372036854775807L; // Used when int is not large enough to store value.End with 'L'
+
+    //shortint(-128 to 128) longint, double, HOMEWORK!!!!
+
+    // Create variable for elon's worth ?
+
+    long elons_worth = 241300000000L; // 'L' Must be used for long int.
+
+    System.out.println("Hello world");
+}
+
+}
