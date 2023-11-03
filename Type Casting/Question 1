@@ -1,0 +1,11 @@
+//Write a program that casts a float value to an int value 
+
+public class typeCasting {
+    
+    public static void main(String[] args){
+    
+    float floatValue = 12.34F; // Replace with your float value
+    int intValue = (int) floatValue; // Type casting from float to int
+    System.out.println(intValue); // Prints the integer value 
+    }
+}
