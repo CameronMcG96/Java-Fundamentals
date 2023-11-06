@@ -1,0 +1,109 @@
+//Write Java program that take user input and has a working bank account ?
+
+
+import java.util.Scanner;
+
+public class BankAccount {
+
+private String accountNumber;
+private String accountHolder;
+private double balance;
+
+
+// Class constructor with this. function to define and invoke class variables
+
+public BankAccount(String accountNumber, String accountHolder, double balance )
+{
+    this.accountNumber = accountNumber;
+    this.accountHolder = accountHolder;
+    this.balance = balance;
+
+
+
+
+}
+
+// First class method called deposit with a method variable (amount).
+
+public void deposit(double amount)
+{
+    //If and else statement for logic and formuala
+    if (amount > 0)
+    {
+        balance += amount;
+        System.out.println("Deposited $" + amount + ". New Balance: $" + balance);
+    }
+    else 
+    {
+        System.out.println("Invalid deposit amount. Please enter a positive amount.");
+    }
+
+
+}
+// Second class method  with if and else statemnet for logic and formula.
+public void withdrawal(double amount)
+{
+    if (amount > 0 && amount <= balance)
+    {
+        balance -= amount;
+        System.out.println("Withdraw $" + amount + ". New balance: $" + balance);
+    }
+    else if (amount > balance) 
+    {
+        System.out.println("Insufficient funds. Withdrawal not allowed.");
+    }
+    else
+    {
+        System.out.println("Invalid withdrawal amount. Please enter posostive amount.");
+    }
+}
+
+    public static void main(String[] args)
+    {
+    Scanner sc = new Scanner(System.in);
+
+    System.out.print("Enter account number: ");
+    String accountNumber = sc.nextLine();
+
+    System.out.print("Enter account holder's name: ");
+    String accountHolder = sc.nextLine();
+
+    System.out.print("Enter initial balance: ");
+    double initialBalance = sc.nextDouble();
+
+    BankAccount userAccount = new BankAccount(accountNumber, accountHolder, initialBalance);
+
+    while (true) 
+    {
+        System.out.println("Choose an option: ");
+        System.out.println("1. Deposit");
+        System.out.println("2. Withdraw");
+        System.out.println("3. Exit");
+
+        System.out.print("Enter your choice (1/2/3): ");
+        int choice = sc.nextInt();
+
+        if (choice == 1)
+        {
+            System.out.print("Enter the deposit amount: ");
+            double depositAmount = sc.nextDouble();
+            userAccount.deposit(depositAmount);
+        }
+        else if (choice == 2)
+        {
+            System.out.print("Enter the withdrawal amount: ");
+            double withdrawalAmount = sc.nextDouble();
+            userAccount.withdrawal(withdrawalAmount);
+        }
+        else if (choice == 3)
+        {
+            System.out.println("Exiting the program. Thank you!");
+            break;
+        }
+        else 
+        {
+            System.out.println("Invalid choice. Please select a valid option (1/2/3).");
+        }
+    }
+    
+    }}
