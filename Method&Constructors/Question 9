@@ -1,0 +1,27 @@
+//Write a program that shows car info. Demonstrate using constructor and methods ?
+
+public class Car {
+    
+public String make;
+public String model;
+public int year;
+
+public Car(String make, String model, int year)
+{
+    this.make = make;
+    this.model = model;
+    this.year = year;
+}
+
+public void startEngine()
+{
+    System.out.println("The " + year + " " + make + " " + model + "'s engine has started.");
+
+}
+
+public static void main(String[] args)
+{
+    Car obj = new Car("Audi", "RS4", 2017);
+
+    obj.startEngine();
+}
