@@ -1,0 +1,20 @@
+//Write a program that shows a persons name and age?
+
+public class Person {
+    
+    String name;
+    int age;
+
+    void sayHello(String name, int age)
+    {
+    System.out.println("Hello " + name + "!. You're " + age + " today.");       
+
+    }
+
+
+public static void main(String[] arg)
+{
+    Person obj = new Person();
+    obj.sayHello("Cameron", 26);
+}    
+
