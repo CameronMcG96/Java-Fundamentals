@@ -1,0 +1,32 @@
+//Write a program that takes user input for a circle, to calculate the circumference and area of a circle ?
+
+import java.util.Scanner;
+
+public class Circle {
+
+    double radius;        // Instance variable to store the radius of the circle
+    double area;          // Instance variable to store the calculated area of the circle
+    double circumference; // Instance variable to store the calculated circumference of the circle
+
+    // Method to calculate and display the circumference of the circle
+    void CircumferenceMethod(double radius) {
+        circumference = Math.PI * 2 * radius; // Calculate circumference using the formula
+        System.out.println("Circumference of the circle is: " + circumference); // Display the circumference
+    }
+
+    // Method to calculate and display the area of the circle
+    void AreaMethod(double radius) {
+        area = Math.PI * (radius * radius); // Calculate area using the formula
+        System.out.println("Area of the circle is: " + area); // Display the area
+    }
+
+    public static void main(String[] args) {
+        Circle obj = new Circle(); // Create an object of the Circle class
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the radius: ");
+        double radius1 = sc.nextDouble(); // Read the radius from the user
+
+        obj.AreaMethod(radius1);          // Calculate and display the area
+        obj.CircumferenceMethod(radius1); // Calculate and display the circumference
+    }
+}
