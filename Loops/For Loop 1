@@ -1,0 +1,38 @@
+//Write a Java program that takes a non-negative integer as input from the user and calculates its factorial using a for loop?
+
+import java.util.Scanner;
+
+public class for1 {
+
+   
+
+
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter a non-negative integer
+        System.out.print("Enter a non-negative integer: ");
+
+        // Read the user input
+        int n = scanner.nextInt();
+
+        // Close the scanner to prevent resource leaks
+        scanner.close();
+
+        // Validate that the input is non-negative
+        if (n < 0) {
+            System.out.println("Please enter a non-negative integer.");
+        } else {
+            // Calculate the factorial using a for loop
+            long factorial = 1;
+
+            for (int i = 1; i <= n; i++) {
+                factorial *= i;
+            }
+
+            // Display the result
+            System.out.println("The factorial of " + n + " is: " + factorial);
+        }
+    }
+}
