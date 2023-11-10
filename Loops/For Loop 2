@@ -1,0 +1,27 @@
+//Create a Java program that takes an integer input from the user and generates a multiplication table for that number?
+import java.util.Scanner;
+public class for2 {
+   
+
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from the user
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user to enter a number for the multiplication table
+        System.out.print("Enter a number for the multiplication table: ");
+
+        // Read the user input
+        int number = scanner.nextInt();
+
+        // Close the scanner to prevent resource leaks
+        scanner.close();
+
+        // Display the multiplication table using a for loop
+        System.out.println("Multiplication Table for " + number + ":");
+
+        for (int i = 1; i <= 10; i++) {
+            int result = number * i;
+            System.out.println(number + " x " + i + " = " + result);
+        }
+    }
+}
